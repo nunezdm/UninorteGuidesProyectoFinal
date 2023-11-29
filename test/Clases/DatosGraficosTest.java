@@ -1,15 +1,11 @@
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/UnitTests/JUnit5TestClass.java to edit this template
+ * Click nbfs://nbhost/SystemFileSystem/Templates/UnitTests/JUnit4TestClass.java to edit this template
  */
 package Clases;
 
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
+import org.junit.Test;
+import static org.junit.Assert.*;
 
 /**
  *
@@ -19,26 +15,7 @@ public class DatosGraficosTest {
     
     public DatosGraficosTest() {
     }
-    
-    @BeforeAll
-    public static void setUpClass() {
-    }
-    
-    @AfterAll
-    public static void tearDownClass() {
-    }
-    
-    @BeforeEach
-    public void setUp() {
-    }
-    
-    @AfterEach
-    public void tearDown() {
-    }
 
-    /**
-     * Test of getmCoeficiente method, of class DatosGraficos.
-     */
     @Test
     public void testGetmCoeficiente() {
         System.out.println("getmCoeficiente");
@@ -48,11 +25,9 @@ public class DatosGraficosTest {
         double expResult = 0.0;
         double result = instance.getmCoeficiente(i, j);
         assertEquals(expResult, result, 0);
+        fail("The test case is a prototype.");
     }
 
-    /**
-     * Test of getmAdyacencia method, of class DatosGraficos.
-     */
     @Test
     public void testGetmAdyacencia() {
         System.out.println("getmAdyacencia");
@@ -64,9 +39,6 @@ public class DatosGraficosTest {
         assertEquals(expResult, result);
     }
 
-    /**
-     * Test of getCordeX method, of class DatosGraficos.
-     */
     @Test
     public void testGetCordeX() {
         System.out.println("getCordeX");
@@ -77,9 +49,6 @@ public class DatosGraficosTest {
         assertEquals(expResult, result);
     }
 
-    /**
-     * Test of getCordeY method, of class DatosGraficos.
-     */
     @Test
     public void testGetCordeY() {
         System.out.println("getCordeY");
@@ -90,9 +59,6 @@ public class DatosGraficosTest {
         assertEquals(expResult, result);
     }
 
-    /**
-     * Test of getNombre method, of class DatosGraficos.
-     */
     @Test
     public void testGetNombre() {
         System.out.println("getNombre");
@@ -103,9 +69,6 @@ public class DatosGraficosTest {
         assertEquals(expResult, result);
     }
 
-    /**
-     * Test of getEnArbol method, of class DatosGraficos.
-     */
     @Test
     public void testGetEnArbol() {
         System.out.println("getEnArbol");
@@ -116,9 +79,6 @@ public class DatosGraficosTest {
         assertEquals(expResult, result);
     }
 
-    /**
-     * Test of setmCoeficiente method, of class DatosGraficos.
-     */
     @Test
     public void testSetmCoeficiente() {
         System.out.println("setmCoeficiente");
@@ -129,9 +89,6 @@ public class DatosGraficosTest {
         instance.setmCoeficiente(i, j, mCoeficiente);
     }
 
-    /**
-     * Test of setmAdyacencia method, of class DatosGraficos.
-     */
     @Test
     public void testSetmAdyacencia() {
         System.out.println("setmAdyacencia");
@@ -142,9 +99,6 @@ public class DatosGraficosTest {
         instance.setmAdyacencia(i, j, mAdyacencia);
     }
 
-    /**
-     * Test of setCordeX method, of class DatosGraficos.
-     */
     @Test
     public void testSetCordeX() {
         System.out.println("setCordeX");
@@ -154,9 +108,6 @@ public class DatosGraficosTest {
         instance.setCordeX(i, cordeX);
     }
 
-    /**
-     * Test of setCordeY method, of class DatosGraficos.
-     */
     @Test
     public void testSetCordeY() {
         System.out.println("setCordeY");
@@ -166,9 +117,6 @@ public class DatosGraficosTest {
         instance.setCordeY(i, cordeY);
     }
 
-    /**
-     * Test of setNombre method, of class DatosGraficos.
-     */
     @Test
     public void testSetNombre() {
         System.out.println("setNombre");
@@ -178,9 +126,6 @@ public class DatosGraficosTest {
         instance.setNombre(i, nombre);
     }
 
-    /**
-     * Test of setEnArbol method, of class DatosGraficos.
-     */
     @Test
     public void testSetEnArbol() {
         System.out.println("setEnArbol");
@@ -190,9 +135,6 @@ public class DatosGraficosTest {
         instance.setEnArbol(i, enArbol);
     }
 
-    /**
-     * Test of crearEnArbol method, of class DatosGraficos.
-     */
     @Test
     public void testCrearEnArbol() {
         System.out.println("crearEnArbol");
