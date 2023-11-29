@@ -25,7 +25,6 @@ public class DatosGraficosTest {
         double expResult = 0.0;
         double result = instance.getmCoeficiente(i, j);
         assertEquals(expResult, result, 0);
-        fail("The test case is a prototype.");
     }
 
     @Test

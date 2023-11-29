@@ -56,7 +56,6 @@ public class Inicio extends javax.swing.JFrame {
         jPanel2 = new javax.swing.JPanel();
         jLabel5 = new javax.swing.JLabel();
         MostrarCaminos = new javax.swing.JButton();
-        limpiarBackground = new javax.swing.JLabel();
         EleccionOrigen = new javax.swing.JComboBox<>();
         kmRecorridos2 = new javax.swing.JLabel();
         iconDestino = new javax.swing.JLabel();
@@ -65,6 +64,7 @@ public class Inicio extends javax.swing.JFrame {
         kmRecorridos = new javax.swing.JLabel();
         jSeparator1 = new javax.swing.JSeparator();
         BuscarCamino = new javax.swing.JButton();
+        limpiarBackground = new javax.swing.JLabel();
         iconOrigen = new javax.swing.JLabel();
         rectanguloBackground = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
@@ -146,7 +146,7 @@ public class Inicio extends javax.swing.JFrame {
 
         MostrarCaminos.setBackground(new java.awt.Color(255, 255, 204));
         MostrarCaminos.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 24)); // NOI18N
-        MostrarCaminos.setForeground(new java.awt.Color(255, 255, 255));
+        MostrarCaminos.setForeground(new java.awt.Color(60, 124, 124));
         MostrarCaminos.setText("Iniciar Mapa");
         MostrarCaminos.setContentAreaFilled(false);
         MostrarCaminos.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -155,11 +155,7 @@ public class Inicio extends javax.swing.JFrame {
                 MostrarCaminosActionPerformed(evt);
             }
         });
-        jPanel2.add(MostrarCaminos, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 510, 210, 50));
-
-        limpiarBackground.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        limpiarBackground.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/Frame 10.png"))); // NOI18N
-        jPanel2.add(limpiarBackground, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 510, 550, -1));
+        jPanel2.add(MostrarCaminos, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 520, 210, 50));
 
         EleccionOrigen.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); // NOI18N
         EleccionOrigen.setForeground(new java.awt.Color(60, 124, 124));
@@ -211,8 +207,8 @@ public class Inicio extends javax.swing.JFrame {
         jPanel2.add(kmRecorridos, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 420, 270, 30));
         jPanel2.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 400, 470, 30));
 
-        BuscarCamino.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 24)); // NOI18N
-        BuscarCamino.setForeground(new java.awt.Color(60, 124, 124));
+        BuscarCamino.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 20)); // NOI18N
+        BuscarCamino.setForeground(new java.awt.Color(255, 255, 255));
         BuscarCamino.setText("Encontrar ruta");
         BuscarCamino.setToolTipText("");
         BuscarCamino.setBorder(null);
@@ -226,7 +222,11 @@ public class Inicio extends javax.swing.JFrame {
                 BuscarCaminoActionPerformed(evt);
             }
         });
-        jPanel2.add(BuscarCamino, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 340, 280, 50));
+        jPanel2.add(BuscarCamino, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 340, 210, 50));
+
+        limpiarBackground.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        limpiarBackground.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/Frame 10.png"))); // NOI18N
+        jPanel2.add(limpiarBackground, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 340, 210, -1));
 
         iconOrigen.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/MapPin.png"))); // NOI18N
         jPanel2.add(iconOrigen, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 290, 80, -1));
@@ -237,7 +237,7 @@ public class Inicio extends javax.swing.JFrame {
 
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/ArrowFatLinesUp.png"))); // NOI18N
-        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 570, 210, -1));
+        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 570, 550, -1));
 
         jLabel4.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(153, 153, 153));
